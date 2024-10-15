@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller Posts</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container my-5">
+
+    <h1 class="text-center mb-4">Lista de Posts</h1>
+
+    <div class="row">
+        <div class="col-md-8">
+            <table class="table table-striped table-bordered" id="postsTable">
+                <thead class="table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Título</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title" id="postTitle">Selecciona un post</h3>
+                    <p class="card-text" id="postBody">El cuerpo del post aparecerá aquí.</p>
+                    <button class="btn btn-primary w-100 mb-2" onclick="editPost()">Editar Post</button>
+                    <button class="btn btn-success w-100" onclick="createPost()">Crear Nuevo Post</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
